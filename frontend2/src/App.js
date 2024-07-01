@@ -4,6 +4,7 @@ import './App.css';
 import Response from './Component/Response';
 
 import Home from './Component/Home';
+import Page_sec from './Component/page-2';
 
 // import {FormData} from './Component/FormData';
 import GlassForm from './GlassForm';
@@ -22,7 +23,7 @@ function App() {
        <BrowserRouter>
       <Routes>
         <Route path='/' element = {<Home/>}/>
-        <Route path='/vAcc' element = {<VoiceAssistant/>}/>
+        <Route path='/vAcc' element = {<Page_sec/>}/>
         {/* <Route path='/form' element = {<GlassForm />}/>
         <Route path='/res' element={<Response/>}/>
         <Route path='/bot' element={<ChatBot/>}/> */}
