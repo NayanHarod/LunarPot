@@ -1,33 +1,48 @@
-import React from 'react'
-import './Home.css'
-import gemini from './gemin.json'
+import React from 'react';
+import './Home.css';
+import gemini from './gemin.json';
 import Lottie from "lottie-react";
-import GlassForm from '../GlassForm';
 import { Link } from 'react-router-dom';
-import Mind from './MMind.json'
+import ParticlesComponent from './particals';
 
-const Home = () => {
+import NavigationBar from './Navbar'
+
+function Home() {
   return (
+    <>
+    
+
+  {/* <ParticlesComponent id = "particles" /> */}
+    {/* <div className="Navbar">Hello</div> */}
     <div className='mainclass'>
-<div className='Home123'>
-<Lottie animationData={Mind}/> 
-</div>
-
-    <div className='Home1'> Welcome to <span className='gred'>Molecule-Mind</span></div>
-
-    <div className='gred21'>Connecting AI to Cure...</div>
-    <Link to={'/VAcc'} ><button className='b165'>Continue...</button></Link>
-    
-
-    
+    <ParticlesComponent id = "particles" />  
+    <NavigationBar/>
+      {/* <div className='Home1'> Welcome</div> */}
       <div className='anm'>
-      <Lottie animationData={gemini}/>  
-      </div>  
+      <Lottie animationData={gemini} style={{height:670 }}/> 
+     
+      </div>
+      <div className='gred'>Molecule-Mind </div>
+     
+      <div className='newgrd'>Discover Drug With <div style={{textAlign:'left', marginLeft:220, marginBottom:20}}> AI....</div> </div>
+
+    {/* <div className='gred21'>Connecting AI to Cure...</div> */}
+
+    <Link to={'/VAcc'} ><button className='b165'>Connecting AI to Cure ---</button></Link>
+
+      
+    
+    
+    
+      
+
+ 
    
 
 
 
     </div>
+    </>
   )
 }
 

@@ -2,27 +2,35 @@ import logo from './logo.svg';
 import React from 'react';
 import './App.css';
 import Response from './Component/Response';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 import Home from './Component/Home';
 import Page_sec from './Component/page-2';
+import ParticlesComponent from './Component/particals';
 
 // import {FormData} from './Component/FormData';
 import GlassForm from './GlassForm';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
-import ChatBot from './Component/ChatBot';
+// import ChatBot from './Component/ChatBot';
 import VoiceAssistant from './Component/voiceAss';
 
 function App() {
   return (
     <div className="App">
-      {/* <FormData/>
-       */}
-
+      
+  
        <BrowserRouter>
       <Routes>
+
+        
+        
         <Route path='/' element = {<Home/>}/>
+       
+        
+        
         <Route path='/vAcc' element = {<Page_sec/>}/>
         {/* <Route path='/form' element = {<GlassForm />}/>
         <Route path='/res' element={<Response/>}/>

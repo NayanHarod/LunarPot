@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { colors } from '@mui/material';
 
 import { useNavigate } from 'react-router-dom';
-import Chart1 from './chart';
+// import Chart1 from './chart';
 
 
 
@@ -23,7 +23,7 @@ const Response = () => {
     
         {/* <div className='box1'style={{display:'flex',flexDirection:'row',flexWrap:'wrap', gap:'40px'}} > */}
         <div className='chart1'>
-        <Chart1/>
+        {/* <Chart1/> */}
         </div>
         
         {/* <Lottie animationData={chart}/>    */}
